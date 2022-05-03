@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-around;
   height: 50px;
+  position: relative;
   h1 {
     position: relative;
     right: 10rem;
@@ -13,10 +14,11 @@
     align-items: center;
     gap: 10px;
     position: relative;
-    left: 5rem;
+    left: 10rem;
   }
   .search {
     position: absolute;
+    top: 8px;
   }
   .btn {
     border-radius: 50px;

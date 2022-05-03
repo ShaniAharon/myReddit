@@ -1,22 +1,33 @@
 /* HeroSearch private styles */
 
-label {
-  display: block;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+.hero-search {
 }
+
 input {
   padding: 0.5rem;
-  width: 100%;
+  width: 500px;
   max-width: 600px;
   box-sizing: border-box;
   display: block;
+  background-color: #f6f7f8;
+  color: #9d9e9e;
+  border: 1px solid #f5f6f7;
+  border-radius: 4px;
 }
 
+//on the warpper form
+// box-sizing: border-box;
+//     display: -ms-flexbox;
+//     display: flex;
+//     background-color: var(--newRedditTheme-field);
+//     border: 1px solid var(--newRedditTheme-line);
+//     border-radius: 4px;
+//     box-shadow: none;
+//     height: 36px;
+
 input:focus {
-  outline: #336699 auto 1px;
+  border: 1px solid #6bb1e5;
+  background-color: #ffffff;
 }
 
 li {
