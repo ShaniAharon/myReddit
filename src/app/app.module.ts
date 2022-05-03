@@ -11,7 +11,8 @@ import {DashboardComponent} from './cmps/dashboard/dashboard.component'
 import {HttpClientModule} from '@angular/common/http'
 // import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 // import { InMemoryDataService } from './services/in-memory-data.service';
-import {HeroSearchComponent} from './cmps/hero-search/hero-search.component'
+import {HeroSearchComponent} from './cmps/hero-search/hero-search.component';
+import { AppHeaderComponent } from './cmps/app-header/app-header.component'
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {HeroSearchComponent} from './cmps/hero-search/hero-search.component'
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
+    AppHeaderComponent,
   ],
   imports: [
     BrowserModule,

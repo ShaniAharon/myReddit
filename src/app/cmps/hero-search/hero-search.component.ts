@@ -1,19 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core'
 
-import { Observable, Subject } from 'rxjs';
+import {Observable, Subject} from 'rxjs'
 
-import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
-import { Hero } from 'src/app/models/hero';
-import { HeroService } from 'src/app/services/hero.service';
+import {debounceTime, distinctUntilChanged, switchMap} from 'rxjs/operators'
+import {Hero} from 'src/app/models/hero'
+import {HeroService} from 'src/app/services/hero.service'
 
 @Component({
-  selector: 'app-hero-search',
+  selector: 'hero-search',
   templateUrl: './hero-search.component.html',
   styleUrls: ['./hero-search.component.scss'],
 })
 export class HeroSearchComponent implements OnInit {
-  heroes$!: Observable<Hero[]>;
-  private searchTerms = new Subject<string>();
+  heroes$!: Observable<Hero[]>
+  private searchTerms = new Subject<string>()
   // A Subject is both a source of observable values and an Observable itself.
   // You can subscribe to a Subject as you would any Observable.
   // You can also push values into that Observable by calling
@@ -23,7 +23,7 @@ export class HeroSearchComponent implements OnInit {
 
   // Push a search term into the observable stream.
   search(term: string): void {
-    this.searchTerms.next(term);
+    this.searchTerms.next(term)
   }
 
   ngOnInit(): void {
@@ -36,6 +36,6 @@ export class HeroSearchComponent implements OnInit {
 
       // switch to new search observable each time the term changes
       switchMap((term: string) => this.heroService.searchHeroes(term))
-    );
+    )
   }
 }
