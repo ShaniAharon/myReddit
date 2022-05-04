@@ -13,6 +13,7 @@ input {
   color: #9d9e9e;
   border: 1px solid #f5f6f7;
   border-radius: 4px;
+  height: 36px;
 }
 
 //on the warpper form
@@ -38,6 +39,7 @@ input:hover {
 li {
   list-style-type: none;
 }
+
 .search-result li a {
   border-bottom: 1px solid gray;
   border-left: 1px solid gray;

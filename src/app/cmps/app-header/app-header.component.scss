@@ -4,6 +4,10 @@
   justify-content: space-around;
   height: 50px;
   position: relative;
+  .l-sec {
+    position: absolute;
+    left: 179px;
+  }
   h1 {
     position: relative;
     right: 10rem;
@@ -15,10 +19,12 @@
     gap: 10px;
     position: relative;
     left: 10rem;
+    left: 27rem;
   }
   .search {
     position: absolute;
     top: 8px;
+    left: 125px;
   }
   .btn {
     border-radius: 50px;

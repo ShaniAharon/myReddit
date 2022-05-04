@@ -7,6 +7,6 @@ import {Component, OnInit} from '@angular/core'
 })
 export class AppHeaderComponent implements OnInit {
   constructor() {}
-  title = 'Tour of Heroes'
+  title = 'Readit'
   ngOnInit(): void {}
 }
