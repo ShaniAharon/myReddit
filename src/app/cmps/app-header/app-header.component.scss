@@ -27,10 +27,16 @@
   .btn-white {
     border: 1px solid #499fe0;
     color: #0079d3;
+    &:hover {
+      background-color: #f5fafd;
+    }
   }
   .btn-blue {
     border: 1px solid #0079d3;
     color: #ffffff;
     background-color: #0079d3;
+    &:hover {
+      background-color: #1484d6;
+    }
   }
 }
